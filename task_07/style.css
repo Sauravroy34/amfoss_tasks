@@ -1,0 +1,27 @@
+body {
+    width:400px;
+    height:460px;
+    background-image: url(assests/mount.jpg);
+    background-size: cover;
+    border-radius: 5px;
+}
+.container {
+    text-align: center;
+}
+#tem {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+#desc {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.temperature {
+    text-align: center;
+}
+#feel { font-size: 25px;
+}
+#name {
+    font-size: 25px;
+}
