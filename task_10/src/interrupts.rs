@@ -94,7 +94,7 @@ fn success(chars: &[Option<char>; ARRAY_SIZE]) -> bool {
 // Function to shift characters to the left in the array
 fn left_shift(chars: &mut [Option<char>; ARRAY_SIZE]) {
     for i in 0..ARRAY_SIZE - 1 {
-        chars[i+1] = chars[i];
+        chars[i] = chars[i + 1];
     }
     chars[ARRAY_SIZE - 1] = None;
 }
@@ -102,18 +102,17 @@ fn left_shift(chars: &mut [Option<char>; ARRAY_SIZE]) {
 // Function to add a character to the character array
 fn add_character(chars: &mut [Option<char>; ARRAY_SIZE], character: char) -> Result<(), &'static str> {
     if chars[ARRAY_SIZE - 1].is_some() {
-        
         // The array is full, remove the last character
-        chars[ARRAY_SIZE - 1] = None;
+        left_shift(chars);
     }
 
     // Find the first available index (None) and insert the new character
     unsafe {
-        for i in COUNT..ARRAY_SIZE-1 {
-            let index = ARRAY_SIZE - i - 2;
-            if chars[index].is_none() {
-                COUNT += 1;
-                chars[index] = Some(character);
+        for i in 0..ARRAY_SIZE {
+            //let index = ARRAY_SIZE - i - 2;
+            if chars[i].is_none() {
+                //COUNT += 1;
+                chars[i] = Some(character);
                 return Ok(());
             }
         }
@@ -162,7 +161,7 @@ if let Ok(Some(key_event)) = keyboard.add_byte(scancode) {
                         println!("{}",ASCII_AINZ);
                     }
                     else {
-                        let _=add_character(&mut CHARS, character);
+                        add_character(&mut CHARS, character);
                         print!("{}",ASCII_AMFOSS_top);
                         print!("{}",port_address);
                         print!("{}",ASCII_AMFOSS_mid);
@@ -211,7 +210,7 @@ pub const ASCII_AMFOSS_mid: &str = "
     !@@@Y          ^JPGGGGGGY:      Y@@@?         
     ?@@@?       .!YGGGGPJ5GGGG7.    ?@@@J     Enter passcode:
     ~@@@Y     :?PGGGGP7: .?GGGB5.   Y@@@7         
-     B@@&:  ~JGGGGGGG5^    ^5P7:   :&@@&:                   ";
+     B@@&:  ~JGGGGGGG5^    ^5P7:   :&@@&:     ";
     pub const ASCII_AMFOSS_bottom: &str = "       
      ~@@@G!5GGGGP?5GGGGJ.    .     G@@@J          
       ?@@@&BGG5!.  7GGGGP!       ^G@@@5           
