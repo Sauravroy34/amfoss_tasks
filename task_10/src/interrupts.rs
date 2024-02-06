@@ -103,16 +103,16 @@ fn left_shift(chars: &mut [Option<char>; ARRAY_SIZE]) {
 fn add_character(chars: &mut [Option<char>; ARRAY_SIZE], character: char) -> Result<(), &'static str> {
     if chars[ARRAY_SIZE - 1].is_some() {
         // The array is full, remove the last character
-        left_shift(chars);
+        chars[ARRAY_SIZE - 1] = None;
     }
 
     // Find the first available index (None) and insert the new character
     unsafe {
-        for i in 0..ARRAY_SIZE {
-            //let index = ARRAY_SIZE - i - 2;
-            if chars[i].is_none() {
-                //COUNT += 1;
-                chars[i] = Some(character);
+        for i in COUNT..ARRAY_SIZE-1 {
+            let index = i;
+            if chars[index].is_none() {
+                COUNT += 1;
+                chars[index] = Some(character);
                 return Ok(());
             }
         }
