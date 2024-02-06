@@ -1,5 +1,5 @@
 
-from PySide6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton,QVBoxLayout
+from PySide6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton,QMessageBox
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import  QRect
 import requests
@@ -48,7 +48,13 @@ class SearchWindow(QWidget):
 
 
     def capt(self):
-        pass
+        dlg = QMessageBox(self)
+
+        dlg.setWindowTitle("state")
+       
+        dlg.setText("Captured!")
+        dlg.setGeometry(425,1,20,20)         
+        dlg.exec()
 
 
 
