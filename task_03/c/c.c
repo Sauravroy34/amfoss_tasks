@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 bool check(int num) {
-    if (num <= 2) {
+    if (num == 2) {
         return true; 
     }
     
