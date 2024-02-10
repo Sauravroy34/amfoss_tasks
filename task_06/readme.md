@@ -1,3 +1,4 @@
 # Cricket vault
-This is the first time ever that i made a fully functional discord bot and to be honest i am proud of myself achieving that milestone! 
+This is the first time I made a fully functional discord bot; honestly, I am proud of achieving that milestone! 
 
+file:///home/saurav/Pictures/Screenshots/Screenshot%20from%202024-02-10%2016-10-32.png
