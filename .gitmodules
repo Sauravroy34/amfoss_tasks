@@ -1,0 +1,16 @@
+[submodule "task_02/Devblog/Public"]
+	path = task_02/Devblog/Public
+	url = https://github.com/Sauravroy34/Sauravroy34.github.io.git
+	branch = main
+[submodule "task_02/Myblog/public"]
+	path = task_02/Myblog/public
+	url = https://github.com/Sauravroy34/Sauravroy34.github.io.git
+	branch = main
+[submodule "task_02/Myblog/Sauravroy34.github.io"]
+	path = task_02/Myblog/Sauravroy34.github.io
+	url = https://github.com/Sauravroy34/Sauravroy34.github.io.git
+	branch = main
+[submodule "task_02/myblog/public"]
+	path = task_02/myblog/public
+	url = https://github.com/Sauravroy34/Sauravroy34.github.io.git
+	branch = main
