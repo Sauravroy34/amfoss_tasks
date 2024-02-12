@@ -1,35 +1,40 @@
 import java.util.Scanner;
 
-public class PrimeNumbers {
-    public static boolean isPrime(int num) {
-        if (num <= 1) {
-            return false; // 0 and 1 are not prime numbers
+public class java {
+    public static boolean check(int num) {
+        if (num == 2) {
+            return true ;
         }
-        
-        for (int i = 2; i * i <= num; ++i) {
-            if (num % i == 0) {
-                return false; // num is divisible by i, so it's not a prime
+        else {
+            for (int i = 2; i<num;i++){
+                if (num % i == 0) {
+                    return false;
+                }
             }
         }
-        
-        return true; // num is prime
+        return true;
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number (n): ");
-        int n = scanner.nextInt();
-        scanner.close();
-        
-        System.out.println("Prime numbers up to " + n + ":");
-        
-        for (int i = 2; i <= n; ++i) {
-            if (isPrime(i)) {
-                System.out.print(i + " ");
-            }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+  
+        int num = sc.nextInt();
+        if (num <2) {
+            System.out.println("prime number not defied");
         }
-        
-        System.out.println();
-    }
-}
+        else{
+        for (int j = 2 ;j<=num;j++) {
+            if (check(j)) {
+                System.out.println("prime number "+ j);
 
+            }
+        }            
+        }
+
+
+
+
+    }
+
+}      

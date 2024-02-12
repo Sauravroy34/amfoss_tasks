@@ -3,7 +3,7 @@ let button = document.getElementById("search")
 
 
 
-button.addEventListener("click",async () =>{
+button.addEventListener("click",() =>{
 
 let place = place_name.value;
 p = fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${place}&appid=8a301729002ef55b2b877d24307dc509`)
@@ -15,7 +15,7 @@ p.then((response)=>{
 .then((response)=> {console.log(response)
     if (response.length == 0){
         document.body.style.backgroundImage = "url(assests/error.jpeg)"
-
+        
 
     }
 
@@ -52,6 +52,7 @@ p.then((response)=>{
 
 
 })
+
 
 
 
