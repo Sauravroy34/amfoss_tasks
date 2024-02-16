@@ -4,8 +4,5 @@ This challenge was intresting since i made an extension for the first time in li
 faced a lot a errors but thanks to internet i was able to resolve all 
 
 ## Images
-![proof1](https://github.com/Sauravroy34/amfoss-task/assets/136881235/a86b6ba1-d805-4f36-b3eb-98c57160fd4c)
-
-![proof2](https://github.com/Sauravroy34/amfoss-task/assets/136881235/5406139c-cb42-47d6-bbb2-cc41f98e915f)
-
-![proof3](https://github.com/Sauravroy34/amfoss-task/assets/136881235/f4b92fa9-006f-4cd8-99ba-0d1e2bc97547)
+![Screenshot from 2024-02-16 17-02-26](https://github.com/Sauravroy34/amfoss_tasks/assets/136881235/94e8c071-22f7-4998-9d66-72edfd97a384)
+![Screenshot from 2024-02-16 17-02-41](https://github.com/Sauravroy34/amfoss_tasks/assets/136881235/3f4b84e3-a952-4eb3-8821-460ea36dd6da)
