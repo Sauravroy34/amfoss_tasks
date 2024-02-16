@@ -4,5 +4,4 @@ but after spending an hour learning about them from some resources avilable onli
 and also special thanks to my mentor for their amazing guidance 
 <br>
 ## Image 
-![solution](https://github.com/Sauravroy34/amfoss-task/assets/136881235/6e1d5e47-dd8a-44b3-8d9a-c9b036fe1448)
-
+![Screenshot from 2024-02-16 16-56-49](https://github.com/Sauravroy34/amfoss_tasks/assets/136881235/46c04d14-2bed-4617-a0ca-c4224a9913bb)
