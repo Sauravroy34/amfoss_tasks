@@ -19,6 +19,9 @@ end
 
 number_str = IO.gets("Enter a number: ")
 number = String.trim(number_str) |> String.to_integer()
+if number < 2 do
+    IO.puts("prime number not defined ")
+else
 
-
-IO.inspect Prime.give(number)
+    IO.inspect Prime.give(number)
+end
